@@ -45,16 +45,16 @@ public class Rover {
             this.orientacao = orientacao.direita();
         } else if(direcao == Direcao.M) {
             switch (this.orientacao) {
-                case N:
+                case E:
                     this.x++;
                     break;
-                case E:
+                case N:
                     this.y++;
                     break;
-                case S:
+                case W:
                     this.x--;
                     break;
-                case W:
+                case S:
                     this.y--;
                     break;
             }
@@ -63,7 +63,7 @@ public class Rover {
     
     @Override
     public String toString(){
-        return String.format("Rover %d: %d %d %s%s", this.id, this.x, this.y, this.orientacao, System.lineSeparator());
+        return String.format("Rover %d: %d %d %s", this.id, this.x, this.y, this.orientacao);
     }
 
 }

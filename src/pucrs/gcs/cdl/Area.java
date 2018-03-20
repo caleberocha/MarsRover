@@ -38,4 +38,13 @@ public class Area{
 	        throw new FallingRoverException();
         }
     }
+    
+    public String printOutput() {
+    	StringBuilder sb = new StringBuilder();
+    	for(Rover r : rovers) {
+    		sb.append(r.toString()).append(System.lineSeparator());
+    	}
+    	
+    	return sb.toString();
+    }
 }

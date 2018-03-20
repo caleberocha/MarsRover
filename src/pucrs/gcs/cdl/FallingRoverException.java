@@ -1,11 +1,12 @@
 package pucrs.gcs.cdl;
 
 public class FallingRoverException extends Throwable {
-    public FallingRoverException() {
-        this("O rover caiu!");
-    }
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = -3599837269350379560L;
 
-    public FallingRoverException(String message) {
-        super(message);
+	public FallingRoverException() {
+        super("O rover caiu!");
     }
 }
